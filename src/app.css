@@ -1,0 +1,76 @@
+:root {
+  --color-white: #FFFFFF;
+  --color-steelGrey: #79828C;
+  --color-steelBlue: #6A769F;
+  --color-deepBlue: #25273A;
+  --color-savillsyellow: #FFDF00;
+
+  --max-width: 1280px;
+  --menu-width: 80px;
+  --padding: 30px;
+
+  --max-center: {
+    position: relative;
+    max-width: var(--max-width);
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+  }
+
+  --vertical-center: {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  --horizontal-center: {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  --ease: {
+    transition: all 0.2s ease-in-out;
+  }
+
+  @custom-media --tablet (width >= 375px) and (width <= 768px);
+  @custom-media --desktop (width >= 768px);
+
+}
+
+@font-face {
+  font-family: 'din_bold';
+  src: url('assets/fonts/din_bold-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'din_light';
+  src: url('assets/fonts/din_light-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'din_medium';
+  src: url('assets/fonts/din_medium-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'din_regular';
+  src: url('assets/fonts/din-webfont.woff') format('woff');
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  background: #e7fafd;
+  background: white;
+  font-family: 'din_regular', sans-serif;
+}

@@ -1,0 +1,42 @@
+{
+  "name": "projector",
+  "version": "1.0.0",
+  "description": "projector",
+  "main": "index.js",
+  "scripts": {
+    "watch": "npm run build:src -- --watch",
+    "build:src": "webpack",
+    "build": "NODE_ENV=production webpack",
+    "publish": ". ./scripts/publish.sh"
+  },
+  "devDependencies": {
+    "autoprefixer-loader": "^3.2.0",
+    "babel-eslint": "^7.0.0",
+    "babel-loader": "^6.2.5",
+    "babel-plugin-transform-decorators-legacy": "*",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-polyfill": "^6.13.0",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-stage-2": "^6.13.0",
+    "css-loader": "^0.24.0",
+    "file-loader": "^0.9.0",
+    "glslify-loader": "^1.0.2",
+    "json-loader": "^0.5.4",
+    "raw-loader": "^0.5.1",
+    "resolve-url-loader": "^1.6.0",
+    "style-loader": "0.13.0",
+    "url-loader": "^0.5.6",
+    "webpack": "^1.13.2"
+  },
+  "dependencies": {
+    "bunny": "^1.0.1",
+    "glsl-noise": "0.0.0",
+    "gsap": "^1.19.0",
+    "interpol-js": "^1.0.2",
+    "ramda": "^0.22.1",
+    "three": "^0.81.2",
+    "three-buffer-vertex-data": "^1.0.2",
+    "three-orbit-controls": "^72.0.0",
+    "unindex-mesh": "^2.0.0"
+  }
+}

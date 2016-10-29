@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <style media="screen">
+      .lyrics {
+        position: absolute;
+        top: 46%;
+        left: 50%;
+        white-space: nowrap;
+        letter-spacing: 24px;
+        transform: translateX(-50%);
+        color: white;
+        font-size: 54px;
+        /*color: black;*/
+      }
+    </style>
+  </head>
+  <body>
+    <div class="lyrics">
+      WE CAN PUT SOME LYRICS HERE
+    </div>
+    <div id="app"></div>
+  </body>
+  <script src='lib/three.min.js'></script>
+  <script src='lib/postprocessing/EffectComposer.js'></script>
+  <script src='lib/postprocessing/RenderPass.js'></script>
+  <script src='lib/postprocessing/ShaderPass.js'></script>
+  <script src='lib/postprocessing/MaskPass.js'></script>
+  <script src='lib/shaders/CopyShader.js'></script>
+  <script src='lib/shaders/FilmShader.js'></script>
+  <script src="lib/shaders/KaleidoShader.js"></script>
+  <script src='lib/shaders/RGBShiftShader.js'></script>
+  <script src="app.js"></script>
+</html>
